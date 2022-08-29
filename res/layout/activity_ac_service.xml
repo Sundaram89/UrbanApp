@@ -1,0 +1,141 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/imgslider1"
+        app:iss_auto_cycle="true"
+        app:iss_delay="0"
+        app:iss_placeholder="@android:color/black"
+        app:iss_error_image="@android:color/darker_gray"
+        app:iss_corner_radius="5"
+        app:iss_selected_dot="@drawable/default_selected_dot"
+        app:iss_unselected_dot="@drawable/default_unselected_dot"
+        app:iss_period="1500">
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/rectangle2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+        </LinearLayout>
+    </com.denzcoskun.imageslider.ImageSlider>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AC Services"
+            android:textFontWeight="700"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:src="@drawable/vector"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:text="1,145 bookings this year"
+                android:textSize="12dp"
+                android:textFontWeight="400"
+                android:textColor="#5E5E5E"
+                android:textStyle="normal"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="100dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:text="4.76(978K)"
+                android:textSize="12dp"
+                android:textFontWeight="400"
+                android:textColor="#5E5E5E"
+                android:textStyle="normal"/>
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle1"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height='wrap_content'
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:text="  Select what you need"
+            android:id="@+id/selectneed"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="4"
+
+        tools:listitem="@layout/card_view_design"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
+
+
+
+
+
+

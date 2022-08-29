@@ -1,0 +1,66 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@drawable/circlebackground"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="55dp"
+        android:layout_gravity="center"
+        android:src="@drawable/group5"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Woohoo!"
+        android:id="@+id/tv_text"
+        android:layout_marginTop="10dp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/text2"
+        android:layout_gravity="center"
+
+        android:text="Your order has been placed!"
+        android:layout_below="@+id/tv_text"
+        android:layout_marginTop="2dp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/text3"
+        android:layout_gravity="center"
+        android:text="Pull up a chair, sit back and relax"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:textFontWeight="400"
+        android:textSize="13dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/text4"
+        android:layout_gravity="center"
+        android:text="as your order is on its way to you!"
+        android:layout_marginTop="2dp"
+        android:textFontWeight="400"
+        android:textSize="13dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"/>
+</LinearLayout>
